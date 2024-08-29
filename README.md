@@ -28,7 +28,7 @@ Espere a paginar carregar para continuar os proximos passos. Sua tela devera est
 # Comece no terminal digitando os seguintes comandos de cada vez:
 
 1)
-````javascript
+````bash
 npm init -y
 ````
 
@@ -262,7 +262,7 @@ return res.json({ token });
 ````
 
 # 3) Autenticação com Token (JWT)
-Embora nosso código não use JWTs (numero grande gerado aleatoriamente) para o token e sim a posição do json , a ideia básica de usar tokens é similar:
+Embora nosso código não use JWTs (sequencia grande gerada apartir de uma chave de criptografia, cabeçalhos e informações/corpo) para o token e sim a posição do json , a ideia básica de usar tokens é similar:
 
 ### Geração do Token:
  Após autenticar um usuário, o servidor gera um "token" que é um índice na lista logedUsers. Isso é feito na rota /login.
